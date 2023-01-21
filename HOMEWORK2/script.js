@@ -75,7 +75,6 @@ else{
 
 
 //task6
-
 let a = Number(prompt("Enter a (leg) side of triangle:",""));
 let b = Number(prompt("Enter b (leg) side of triangle:",""));
 let c = Number(prompt("Enter c (hypotenuse) side of triangle:",""));4
@@ -95,7 +94,6 @@ if(a**2 + b**2 === c**2){
 else{
     console.log("triangle IS NOT a right triangle");
 }
-
 
 
 
@@ -141,7 +139,7 @@ switch(time){
     alert( "I don't know what time is it" );
 }
 
-
+//task7.2
 if(time < 5 || time == 23){
     alert("Good Night!");
 }
