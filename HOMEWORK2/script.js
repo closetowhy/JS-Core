@@ -85,7 +85,7 @@ if(isNaN(S)|| S == 0){
     alert("'Incorrect data or such a triangle does not exist");
 }
 else{
-    console.log(`S = ${S.toPrecision(5)}`);
+    console.log(`S = ${S.toFixed(3)}`);
 }
 
 if(a**2 + b**2 === c**2){
