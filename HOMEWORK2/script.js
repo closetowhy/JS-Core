@@ -75,9 +75,9 @@ else{
 
 
 //task6
-let a = Number(prompt("Enter a (leg) side of triangle:",""));
-let b = Number(prompt("Enter b (leg) side of triangle:",""));
-let c = Number(prompt("Enter c (hypotenuse) side of triangle:",""));4
+let a = Number(prompt("Enter a side of triangle:",""));
+let b = Number(prompt("Enter b side of triangle:",""));
+let c = Number(prompt("Enter c side of triangle:",""));4
 let p = (a+b+c)/2;
 let S = Math.sqrt(p*(p-a)*(p-b)*(p-c));
 
