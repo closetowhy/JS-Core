@@ -50,6 +50,14 @@ function raiseToDegree(a,b){
 }
 raiseToDegree(2,3);
 
+//task4 введення через клавіатуру
+function raiseToDegree(){
+    a = prompt("Enter a number:");
+    b = prompt("Enter a degree:");
+    result = a**b;
+    return result;
+}
+raiseToDegree();
 
 
  //task5
