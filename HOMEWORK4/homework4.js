@@ -32,7 +32,7 @@ function chekAge(){
         throw new Error("Age must be a number!");
     }
     else if(age < 14){
-        throw new Error("YOur age must be at least 14");
+        throw new Error("Your age must be at least 14");
     }
     console.log(age);
 }
