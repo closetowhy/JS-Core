@@ -84,15 +84,15 @@ class Worker {
     this.workingDays = workingDays;
   }
 
-  experience = 1.2;
+  #experience = 1.2;
 
   get setExp() {
-    return this.experience;
+    return this.#experience;
   }
 
   set setExp(value){
     if(value > 0){
-    this.experience = value;
+    this.#experience = value;
     }
     else{
       throw new Error("experience cannot be nagative")
@@ -105,16 +105,16 @@ class Worker {
   }
 
   showSalaryWithExperience(){
-    this.salaryWithExperience = this.showSalary() * this.experience;
+    this.salaryWithExperience = this.showSalary() * this.#experience;
     return this.salaryWithExperience;
   }
 }
 
 const worker1 = new Worker("Andrii", 20, 23);
-console.log(worker1.fullName + " experience: " + worker1.experience);
+console.log(worker1.fullName + " experience: " + worker1.setExp);
 console.log(worker1.fullName + " salary: " + worker1.showSalaryWithExperience());
 worker1.setExp = 1.8;
-console.log(worker1.fullName + " New experience:" + worker1.experience);
+console.log(worker1.fullName + " New experience:" + worker1.setExp);
 console.log(worker1.fullName + " New salary:" + worker1.showSalaryWithExperience());
 
 const worker2 = new Worker("Bohdan", 48, 22);
@@ -135,7 +135,6 @@ function sortBySalary(workers){
 
 let workers = [worker1, worker2, worker3]
 sortBySalary(workers);
-
 
 
 
