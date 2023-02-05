@@ -127,7 +127,7 @@ function sortBySalary(workers){
   workers.sort(function(a,b){
     return a.showSalaryWithExperience() - b.showSalaryWithExperience();
   });
-  console.log("Workers sorted by slary:")
+  console.log("Workers sorted by salary:")
    for(let i = 0; i < workers.length; i++){
     console.log(workers[i].fullName + " salary: "+ workers[i].showSalaryWithExperience());
    }
