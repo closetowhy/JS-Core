@@ -7,8 +7,8 @@
     <title>Homework7</title>
 </head>
 <body>
-    <!----------------Task2----------------->
-    <!-- <p id ='text'>I learning JavaScript events!</p> 
+    <!-- --------------Task2--------------- -->
+    <p id ='text'>I learning JavaScript events!</p> 
 <div>
 	<button id="button">Change style!</button>
 </div>
@@ -16,17 +16,17 @@
 
 
 <!-- --------------Task3------------->
-<!-- <div id="buttons">
+<div id="buttons">
     <button>Make bage blue</button>
     <button>Double-click to make page pink</button>
     <button>Click And hold to make page brown</button>
     <a href="#">Hover over to make page yellow</a>
-</div> -->
+</div>
 
 
 
 <!-- --------------Task4------------ -->
-<!-- <select name="" id="">
+<select name="" id="">
     <option value="1">Peter</option>
     <option value="2">John</option>
     <option value="3">Alice</option>
@@ -35,164 +35,164 @@
 </select>
 <button id="removeButton">Choose And Delete</button>
 
- -->
+
 
 <!-- ----------Task5-------->
-<!-- <button id="liveButton">Live Button</button>
-<div id="parent"></div> -->
+<button id="liveButton">Live Button</button>
+<div id="parent"></div>
 
 
 <!-- ---------Task6---------- -->
-<!-- <p id="size"> </p> -->
+<p id="size"> </p>
 
 
 
 <!-- -------------Task7----------- -->
-<!-- <select name="country" id="country">
+ <select name="country" id="country">
 	<option value="ger">Germany</option>
 	<option value="usa">USA</option>
 	<option value="ukr">Ukraine</option>
 </select>
                     
 <select name="cities" id="cities"></select>
-<p id="output"></p> -->
+<p id="output"></p>
 
 <script>
 
     //--------------------Task1---------------------
-    // const myWindow = window.open("", "", "width=300,height=300");
-    // setTimeout(resize, 2000);
-    // setTimeout(move, 4000);
-    // setTimeout(close, 6000);
+    const myWindow = window.open("", "", "width=300,height=300");
+    setTimeout(resize, 2000);
+    setTimeout(move, 4000);
+    setTimeout(close, 6000);
 
 
-    // function resize() {
-    //     myWindow.resizeTo(500,500);
-    // }
-    // function move() {
-    //     myWindow.moveTo(200, 200);
-    // }
-    // function close(){
-    //     myWindow.close();
-    // }
+    function resize() {
+        myWindow.resizeTo(500,500);
+    }
+    function move() {
+        myWindow.moveTo(200, 200);
+    }
+    function close(){
+        myWindow.close();
+    }
 
     //--------------------Task2---------------------
-    // let button = document.getElementById("button");
-    // let text = document.getElementById("text");
+    let button = document.getElementById("button");
+    let text = document.getElementById("text");
     
-    // button.addEventListener("click", function() {
-    // text.style.color = "orange";
-    // text.style.fontSize = "20px";
-    // text.style.fontFamily = "Comic Sans MS";
-    // });
+    button.addEventListener("click", function() {
+    text.style.color = "orange";
+    text.style.fontSize = "20px";
+    text.style.fontFamily = "Comic Sans MS";
+    });
 
 
 
 
 
     //-----------------------Task3----------------------
-    // let button1 = document.getElementById("buttons").firstElementChild;
-    // let button2 = document.getElementById("buttons").firstElementChild.nextElementSibling;
-    // let button3 = document.getElementById("buttons").lastElementChild.previousElementSibling;
-    // let link = document.getElementById("buttons").lastElementChild;
-    // let body = document.getElementsByTagName("body");
+    let button1 = document.getElementById("buttons").firstElementChild;
+    let button2 = document.getElementById("buttons").firstElementChild.nextElementSibling;
+    let button3 = document.getElementById("buttons").lastElementChild.previousElementSibling;
+    let link = document.getElementById("buttons").lastElementChild;
+    let body = document.getElementsByTagName("body");
 
-    // button1.addEventListener("click", () => {
-    //     document.body.style.backgroundColor = "blue";
-    // });
+    button1.addEventListener("click", () => {
+        document.body.style.backgroundColor = "blue";
+    });
 
-    // button2.addEventListener("dblclick", () => {
-    //     document.body.style.backgroundColor = "#FF69B4";
-    // });
+    button2.addEventListener("dblclick", () => {
+        document.body.style.backgroundColor = "#FF69B4";
+    });
 
-    // button3.addEventListener("mousedown", () =>{
-    //     document.body.style.backgroundColor = "brown";
-    //     button3.addEventListener("mouseup",() =>{
-    //         document.body.style.backgroundColor = "white";
-    //     })
-    // })
+    button3.addEventListener("mousedown", () =>{
+        document.body.style.backgroundColor = "brown";
+        button3.addEventListener("mouseup",() =>{
+            document.body.style.backgroundColor = "white";
+        })
+    })
 
-    // link.addEventListener("mouseover", () => {
-    //     document.body.style.backgroundColor = "yellow"; 
-    //     link.addEventListener("mouseout", () => {
-    //         document.body.style.backgroundColor = "white"; 
-    //     });
-    // });
+    link.addEventListener("mouseover", () => {
+        document.body.style.backgroundColor = "yellow"; 
+        link.addEventListener("mouseout", () => {
+            document.body.style.backgroundColor = "white"; 
+        });
+    });
 
 
 
 
     //----------------------Task4-------------------------
-    // let select = document.querySelector("select");
-    // let removeButton = document.getElementById("removeButton");
+    let select = document.querySelector("select");
+    let removeButton = document.getElementById("removeButton");
 
-    // removeButton.addEventListener("click", () =>{
-    //     select.remove(select.selectedIndex);
-    // })
+    removeButton.addEventListener("click", () =>{
+        select.remove(select.selectedIndex);
+    })
 
 
 
     //-------------------------Task5-----------------------
-        // let liveButton = document.getElementById("liveButton");
-        // let parent = document.getElementById("parent");
+        let liveButton = document.getElementById("liveButton");
+        let parent = document.getElementById("parent");
 
-        // liveButton.addEventListener("click", ()=>{
-        //     let p = document.createElement("p");
-        //     parent.appendChild(p);
-        //     p.innerHTML = "I was pressed!"
-        // });
+        liveButton.addEventListener("click", ()=>{
+            let p = document.createElement("p");
+            parent.appendChild(p);
+            p.innerHTML = "I was pressed!"
+        });
 
-        // liveButton.addEventListener("mouseover", ()=>{
-        //     let p = document.createElement("p");
-        //     parent.appendChild(p);
-        //     p.innerHTML = "Mouse on me!"
-        // });
+        liveButton.addEventListener("mouseover", ()=>{
+            let p = document.createElement("p");
+            parent.appendChild(p);
+            p.innerHTML = "Mouse on me!"
+        });
 
-        // liveButton.addEventListener("mouseout", ()=>{
-        //     let p = document.createElement("p");
-        //     parent.appendChild(p);
-        //     p.innerHTML = "Mouse is not on me!"
-        // });
+        liveButton.addEventListener("mouseout", ()=>{
+            let p = document.createElement("p");
+            parent.appendChild(p);
+            p.innerHTML = "Mouse is not on me!"
+        });
 
 
     //-------------------------Task6------------------------
-    // (function() {
-    //   window.onresize = displayWindowSize;
-    //   window.onload = displayWindowSize;
+    (function() {
+      window.onresize = displayWindowSize;
+      window.onload = displayWindowSize;
 
-    //   function displayWindowSize() {
-    //     let myWidth = window.innerWidth;
-    //     let myHeight = window.innerHeight;
-    //     document.getElementById("size").innerHTML = "Width:"+ myWidth + ", Heigth:" + myHeight;
-    //   };
-    // })();
+      function displayWindowSize() {
+        let myWidth = window.innerWidth;
+        let myHeight = window.innerHeight;
+        document.getElementById("size").innerHTML = "Width:"+ myWidth + ", Heigth:" + myHeight;
+      };
+    })();
 
 
 
     //-----------------------Task7-------------------------------
-    // let country = document.getElementById("country");
-    // let cities = document.getElementById("cities");
+    let country = document.getElementById("country");
+    let cities = document.getElementById("cities");
 
-    // let citiesNames ={
-    //     usa : ["New York", "Washington", "Boston"],
-    //     ger :["Berlin", "Munich", "Hamburg"],
-    //     ukr : ["Kyiv","Lviv","Dnipro"]
-    // }
+    let citiesNames ={
+        usa : ["New York", "Washington", "Boston"],
+        ger :["Berlin", "Munich", "Hamburg"],
+        ukr : ["Kyiv","Lviv","Dnipro"]
+    }
 
-    // country.addEventListener("change", function(){
-    //     let cityName = citiesNames[this.value];
-    //     cities.length = 0;
-    //     for(let i=0; i < cityName.length; i++){
-    //         cities.add(new Option(cityName[i]));
-    //     }
-    // });
+    country.addEventListener("change", function(){
+        let cityName = citiesNames[this.value];
+        cities.length = 0;
+        for(let i=0; i < cityName.length; i++){
+            cities.add(new Option(cityName[i]));
+        }
+    });
 
-    // cities.addEventListener("change", function(){
-    //         let selectElement = document.getElementById("country");
-    //         let selectElement2 = document.getElementById("cities");
-    //         let output = selectElement.options[selectElement.selectedIndex].text + ", " + selectElement2.value;
-    //         document.getElementById("output").textContent = output;
-    // });
+    cities.addEventListener("change", function(){
+            let selectElement = document.getElementById("country");
+            let selectElement2 = document.getElementById("cities");
+            let output = selectElement.options[selectElement.selectedIndex].text + ", " + selectElement2.value;
+            document.getElementById("output").textContent = output;
+    });
 
 </script>
 
