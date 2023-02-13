@@ -178,20 +178,25 @@
         ger :["Berlin", "Munich", "Hamburg"],
         ukr : ["Kyiv","Lviv","Dnipro"]
     }
-
+    
     country.addEventListener("change", function(){
         let cityName = citiesNames[this.value];
         cities.length = 0;
         for(let i=0; i < cityName.length; i++){
             cities.add(new Option(cityName[i]));
         }
+        let selectElement = document.getElementById("country");
+        let selectElement2 = document.getElementById("cities");
+        let output = selectElement.options[selectElement.selectedIndex].text + ", " + selectElement2.value;
+        document.getElementById("output").textContent = output;
+
     });
 
     cities.addEventListener("change", function(){
-            let selectElement = document.getElementById("country");
-            let selectElement2 = document.getElementById("cities");
-            let output = selectElement.options[selectElement.selectedIndex].text + ", " + selectElement2.value;
-            document.getElementById("output").textContent = output;
+        let selectElement = document.getElementById("country");
+        let selectElement2 = document.getElementById("cities");
+        let output = selectElement.options[selectElement.selectedIndex].text + ", " + selectElement2.value;
+        document.getElementById("output").textContent = output;
     });
 
 </script>
