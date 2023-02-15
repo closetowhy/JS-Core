@@ -20,13 +20,13 @@ function checkMail(email){
     let result = regex.test(email);
     return result;
 }
-checkMail("Qmail2@gmailcom");
+checkMail("Qmail2@gmail.com");
 
 
 
 //task3
 function findDB(string){
-    let regex = /db{1,10}d/gi;
+    let regex = /db{1,}d/gi;
     let result = regex.exec(string);
             // let regex2 = /b/gi;
             // let result2 = regex2.exec(result);
