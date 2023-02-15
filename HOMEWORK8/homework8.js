@@ -20,7 +20,7 @@ function checkEmail(email){
     let result = regex.test(email);
     return result;
 }
-checkEmail("Qmail2@gmailcom");
+checkEmail("Qmail2@gmail.com");
 
 
 
