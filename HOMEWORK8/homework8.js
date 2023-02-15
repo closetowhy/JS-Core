@@ -15,19 +15,21 @@ upperCase('Regexp');
 
 
 //Task2
-function checkEmail(email){
+function checkMail(email){
     let regex = /[a-z0-9]+@[a-z]+\.[a-z]/;
     let result = regex.test(email);
     return result;
 }
-checkEmail("Qmail2@gmail.com");
+checkMail("Qmail2@gmailcom");
 
 
 
 //task3
 function findDB(string){
-    let regex = /db{1,10}d/i;
+    let regex = /db{1,10}d/gi;
     let result = regex.exec(string);
+            // let regex2 = /b/gi;
+            // let result2 = regex2.exec(result);
     return result;
 }
 findDB("cdbBdbsbz");
@@ -54,20 +56,26 @@ checkCard("9999-9999-9999-9999");
 
 
 //Task6
-function checkEmail2(email){
+function checkEmail(email){
     let regex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
     let result = regex.test(email);
-    return result;
+    if(result){
+        console.log("Email is correct!");
+    }
+    else{
+        console.log("Email is not correct!");
+    }
 }
-checkEmail2("Qmail2@gmail.com");
-
+checkEmail("my_mail@gmail.com");
+checkEmail('#my_mail@gmail.com');
+checkEmail('my_ma--il@gmail.com');
 
 
 //Task7
 function checkLogin(login){
     let regex = /^(?=[A-Za-z0-9]{2,10}$)(?![\d])/;
     
-    let regexNumbers =/-?\d+(\.\d+)?/g;
+    let regexNumbers = /-?\d+(\.\d+)?/g;
     let numbersInLogin = login.match(regexNumbers);
     console.log(numbersInLogin); 
 
