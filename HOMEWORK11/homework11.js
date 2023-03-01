@@ -50,16 +50,3 @@ function greetUser() {
   module.exports = { greetUser }; 
 
 
-///server
-const http = require("http");
-const personalmodule = require("./personalmodule");
-
-http.createServer((req, res) => {
-  const date = new Date();
-  const greeting = personalmodule.greetUser("user");
-  html = `<p>Date of request: ${date.toString()}</p>
-          <p>${greeting}</p> `
-  res.end(html);
-}).listen(8000);
-
-console.log("Server running at http://127.0.0.1:8000/");
