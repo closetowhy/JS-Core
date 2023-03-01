@@ -44,7 +44,6 @@ function greetUser() {
     } else {
       greeting = "Good evening";
     }
-  
     return `${greeting}, ${userInfo.username}!`;
   }
   
